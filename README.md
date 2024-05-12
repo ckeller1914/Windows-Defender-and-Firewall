@@ -69,24 +69,47 @@ Key Management Service (TCP-In) Properties, Advanced tab shows Domain, Private, 
 Key Management Service (TCP-In) Properties, Advanced tab shows Public profile removed from rule
 
 12. Now we will create an inbound rule that blocks communication with the public network. Since the new rule will be similar to the last, we will copy the existing rule. Right-click the Key Management Service (TCP-In) inbound rule and click Copy. Press Ctrl+V to paste.
+
+![9](https://github.com/ckeller1914/Windows-Defender-and-Firewall/assets/116524804/33ee4cd3-30a5-4921-b095-e0fa1d7350d1)
+
+
 Copy the Key Management Service (TCP-In) rule and paste to create a new rule
 
 13. You will now see a second Key Management Service (TCP-In) inbound rule. Double-click the second rule to open the **Key Management Service *TCP-IN) Properties.
+
+![10](https://github.com/ckeller1914/Windows-Defender-and-Firewall/assets/116524804/5f42fd8f-4fa5-46fd-902c-7fea25bc45cf)
+
+
 Open the new second Key Management Service (TCP-In) rule
 
 14. Since we want to block connection with the public network, select Block the connection on the General tab. Click Apply.
+
+![block](https://github.com/ckeller1914/Windows-Defender-and-Firewall/assets/116524804/3849ed4a-6017-4a49-ad59-39350c11894e)
+
+
 Key Management Service (TCP-In) Properties, apply Block the connection on the General tab and apply
 
 15. Click the Advanced tab.
 Advanced tab of the Key Management Service (TCP-In) Properties rule
 
 16. Click the Domain and Private boxes to remove the checkmarks. Click the Public to add the checkmark. Click Ok.
+
+![public](https://github.com/ckeller1914/Windows-Defender-and-Firewall/assets/116524804/018edf85-6e9e-4772-b5e9-f4ac8ff41a8c)
+
+
 Remove the Domain and Private settings for the Key Management Service (TCP-In) rule
 
 17. The Overview panel will show your changes. Right-click each Key Management Service (TCP-In) rule and click Enable rule.
+
+
+
 Enable the Key Management Service (TCP-In) Domain, Private and Key Management Service (TCP-In) Public rules
 
 18. Now you will see that a green checkmark appears next to the first rule indicating that the rule allowing communication is enabled. A circle with a line through it appears next to the second rule indicating that the rule blocking communication is enabled.
+
+![keyquest](https://github.com/ckeller1914/Windows-Defender-and-Firewall/assets/116524804/18b7cd55-3e12-4d07-969f-3fa1b40e0f2a)
+
+
 Key Management Service (TCP-In) rules status
 
 19. Use Windows Defender Firewall with Advanced Security to block Windows Remote Management on the Public network.
@@ -94,4 +117,9 @@ Key Management Service (TCP-In) rules status
 
 16.Click Windows Start button. Click Windows Security. Click Firewall & network protection. Click Advanced settings. 
 
-17. First, select Inbound Rules and scroll down to Windows Remote Management (HTTP-In), inside that update rules. You will see two entries. One is for the domain network and the other is for the public network. Double-click Windows Remote Management (HTTP-In) for the public network. Click Block the connection. Click Ok.
+17. First, select Inbound Rules and scroll down to Windows Remote Management (HTTP-In), inside that update rules. You will see two entries. One is for the domain network and the other is for the public network. Double-click Windows Remote Management (HTTP-In) for the public network.
+18.
+19.![remote](https://github.com/ckeller1914/Windows-Defender-and-Firewall/assets/116524804/bf2124ac-69a0-49c9-99f0-728041062ec9)
+
+20.
+21. Click Block the connection. Click Ok.
