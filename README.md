@@ -28,8 +28,11 @@
 2) Here you will see an Overview in the center panel. Make special note of the two rule types listed on the left panel:
 
       -Inbound rules: Inbound rules determine what traffic is allowed to the computer.
+   
       -Outbound rules: Outbound rules determine what traffic is allowed to leave the computer.
+   
       -Connection security rules
+   
       -Monitoring
    
 ![InOut](https://github.com/ckeller1914/Windows-Defender-and-Firewall/assets/116524804/ffc04a11-dcce-4059-83d5-7e3d0182acae)
@@ -50,7 +53,9 @@
 4) Scroll to the Key Management Service inbound rule in the Overview panel of Windows Defender Firewall with Advanced Security.
 
    Note the following:
+   
    -The policy is currently not enabled (the Enabled column says No.)
+   
    -If enabled, the rule would allow communication (the Action column says Allow.)
 
    Double-click this rule.
